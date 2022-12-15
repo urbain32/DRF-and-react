@@ -12,7 +12,7 @@ class PostDetail(generics.RetrieveDestroyAPIView):  # for deleting data
 
 
 
-""" Concrete View Classes
+""" Concrete View Classe
 #CreateAPIView
 Used for create-only endpoints.
 #ListAPIView
