@@ -2,11 +2,11 @@ from rest_framework import generics
 from blog.models import Post
 from .serializers import PostSerializer
 
-class PostList(generics.ListCreateAPIView):
+class PostList(generics.ListCreateAPIView): # for getting and creating the data
     queryset = Post.postobjects.all()
     serializer_class = PostSerializer
 
-class PostDetail(generics.RetrieveDestroyAPIView):
+class PostDetail(generics.RetrieveDestroyAPIView):  # for deleting data
     queryset = Post.objects.all()
     serializer_class = PostSerializer
 
